@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+html {
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  min-height: 100%;
+  background: hsl(228, 33%, 97%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.comments-div {
+  padding: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.comment-box {
+  background: white;
+  height: 170px;
+  width: 55%;
+  margin: auto;
+  border-radius: 15px;
+}
+
+.new-comment-box {
+
+}
+
+.reply {
+  margin-left: 550px;
+}
+
+img {
+  width: 32px;
+  height: 32px;
+}
+
+.current-user-img {
+  width: 40px;
+  height: 40px;
+}
+
+.current-user-tag {
+  width: 40px;
+  height: 25px;
+  background:hsl(238, 40%, 52%);
+  border-radius: 4px;
+}
+
+h6 {
+  color: white !important;
+  font-size: 14px;
+  padding-left: 7px;
+  margin-top: 4px;
+}
+
+.icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+h4, h5, p {
+  font-size: 16px;
+}
+
+h4 {
+  font-weight: 700;
+  color: hsl(211, 10%, 45%);
+}
+
+h5 {
+  font-weight: 400;
+  color: hsl(211, 10%, 45%);
+}
+
+p {
+  color: hsl(211, 10%, 45%);
+}
+
+.btn {
+  background: none;
+  border: none;
+  color: hsl(238, 40%, 52%);
+  font-weight: 700;
+}
+
+.delete {
+  color: hsl(358, 79%, 66%);
+}
+
+.vertical-bar {
+  position: absolute;
+  left: 500px;
+  top: 420px;
+  border-left: 2px solid hsl(223, 19%, 93%);
+  height: 350px;
+}
+
+textarea {
+  width: 90%;
+  min-height: 110px;
+  outline: none;
+  border-color: hsl(223, 19%, 93%);
+  border-radius: 10px; 
+}
+
+.btn-send {
+  border: none;
+  border-radius: 5px;
+  background: hsl(238, 40%, 52%);
   color: white;
+  padding: 5px;
+  width: 70px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+textarea:focus {
+  border-color: hsl(238, 40%, 52%);
 }
