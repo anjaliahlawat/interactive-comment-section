@@ -18,15 +18,8 @@ const newCommentTemplate = {
 };
 
 const newReplyTemplate = {
-    id: null,
-    content: "",
-    createdAt: "now",
-    score: 0,
+    ...newCommentTemplate,
     replyingTo: "",
-    user: {
-        ...currentUser
-    },
-    replies: []
 };
 
 function CommentsScreen() {
@@ -246,10 +239,6 @@ function CommentsScreen() {
             }
         }
         setComments(arr);
-    }
-
-    const searchForReplyRecursively = () => {
-
     }
 
     return ( 
