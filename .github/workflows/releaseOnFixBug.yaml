@@ -1,13 +1,14 @@
-name: Release on Fix Bug
+name: keyword-releaser
 
-on: push
+on: [push]
 
 jobs:
-  job1:
-    name: First job
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Run a one-line script
-        run: echo Hello, world!
+      - uses: actions/checkout@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Run keyword-releaser
+        working-directory: .
+        run: ./entrypoint.sh FIXED
