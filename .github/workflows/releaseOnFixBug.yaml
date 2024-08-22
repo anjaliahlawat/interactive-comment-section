@@ -7,8 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
+      - uses: anjaliahlawat/keyword-release-action@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Run keyword-releaser
-        working-directory: .
-        run: ./entrypoint.sh FIXED
+        with:
+          args: "Fixed"
