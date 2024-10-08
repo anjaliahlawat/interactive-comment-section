@@ -23,6 +23,7 @@ const newReplyTemplate = {
 };
 
 function CommentsScreen() {
+    const temp = true;
     const [comments, setComments] = useState([]);
     const [newComment, setNewComment] = useState({...newCommentTemplate});
     const [editMode, setEditMode] = useState([]);
